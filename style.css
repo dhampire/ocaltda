@@ -1,0 +1,509 @@
+/*!
+Theme Name: ocaltda
+Theme URI: http://ocaltda.com/
+Author: Jorge Luis Arteaga
+Author URI: http://jlarteaga.com/
+Description: Plantilla OCA Ltad
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ocaltda
+
+
+/* ---------------------------------------------------
+·general
+-------------------------------------------------------*/
+.fondo__general{
+	background: #007934 
+}
+.container{
+	padding: 0;
+}
+body, html{
+	font-size: 16px;
+}
+body {
+	background: #d2d3d5;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+	color: #19541e ;
+}
+a:hover{
+	color:#FFE201;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.095rem;
+}
+.p-0 {
+	padding: 0;
+}
+.icon{
+	color: #19541e;
+}
+.btn--oca{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.15rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 10px;
+	transition: all 0.5s;
+	width: 100%;
+}
+.btn--oca:hover{
+	background: #FFE201;
+	text-shadow: 0.5, 0.5,0.5;
+}
+.whatsapp {
+	color: #007934;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.4rem;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+/* ---------------------------------------------------
+· header
+-------------------------------------------------------*/
+.site-header{
+	font-family: 'Oswald', sans-serif;
+	padding: 10px 0;
+	border-radius: 5px 5px 0 0;
+}
+
+	.nav a {
+		color: white;
+		text-transform: uppercase;
+	}
+	.nav li a:hover,  .nav li a:focus, .nav li a:active{
+		background: #19541e;
+	}
+		.nav-btn--oca{
+			background: #FFE201;
+			top: -20px;
+			z-index: 9999;
+		}
+			.nav-btn--oca span {
+				background: #007934; 
+			}
+	.active a{
+		color: #FFE201;
+	}
+	.site-branding {
+		text-align: center;
+		z-index: 9999;
+		position: relative;
+	}
+		.site-branding img {
+			max-width: 140px; 
+			height: auto;
+		}
+	.main-navigation{
+		top: -40px;
+		margin-bottom: -60px;
+	}
+		@media screen and (min-width: 700px){
+			.main-navigation{ 
+			top: 0;
+			margin-bottom: 0;
+			}
+		}
+	.slide__picture--img {
+		max-width: 100%;
+		height: auto
+	}
+
+/* ---------------------------------------------------
+· Slide
+-------------------------------------------------------*/
+	.slide__cuadro::before{
+		background: rgba(255, 255,255,0.5);
+		content: '';
+		display: block;
+		height: 300px;
+		left: -60px;
+		position: absolute;
+		top: -200px;
+		width: 300px;
+
+	}
+	.slide__cuadro:after{
+		background: rgba(255, 255,255,0.5);
+		content: '';
+		display: block;
+		height: 400px;
+		position: absolute;
+		right: -50px;
+		top: -100px;
+		width:400px;
+	}
+.slide__cuadro {
+
+}
+.slide__texto{
+	bottom: 100px;
+	color: #19541e;
+	left: auto;
+	padding-left: 0;
+	position: relative;
+	right: 5%;
+	z-index: 99;
+	text-shadow: initial;
+	z-index: 9999;
+}
+	.slide__texto h1 {
+		font-size: 1.5rem;
+	}
+	.slide__texto p{
+		color: #333;
+	}
+@media screen and (min-width: 724px){
+.slide__cuadro{
+		bottom: 0;
+		left: auto;
+		right: 5%;
+		width: 30%;
+	}
+	.slide__cuadro:after{
+		background: rgba(255, 255,255,0.5);
+		content: '';
+		display: block;
+		height: 400px;
+		position: absolute;
+		right: -30px;
+		top: -300px;
+		width: 500px;
+	}
+	.slide__cuadro::before{
+		background: rgba(255, 255,255,0.5);
+		content: '';
+		display: block;
+		height: 400px;
+		left: -60px;
+		position: absolute;
+		top: -200px;
+		width: 500px;
+
+	}
+
+		.slide__texto h1{
+			font-size: x-large;
+		}
+}
+
+.slide__indicador{
+	display: none;
+}
+	@media screen and (min-width: 768px){
+		.slide__indicador {
+			display: inline
+		}		
+	}
+
+/*--------------------------------------------------------------
+# Cromo duro
+--------------------------------------------------------------*/
+.cromo-duro{
+	padding: 20px 0;
+	margin-bottom: 30px;	
+}
+	.listas--sin{
+		list-style-type: none;
+	}
+	.cromo-duro__img{
+		border-radius: 5px;
+		max-width: 100%;
+		height: auto;
+	}
+.cromo-duro--recaudro {
+	background: white;
+	border-radius: 5px;
+	padding-bottom: 20px;
+	margin: 20px 10px;
+	width: calc(100% - 20px);
+}
+/*--------------------------------------------------------------
+# Quienes somos
+--------------------------------------------------------------*/
+.quienes-somos {
+	color: #DCDCDCD;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 30px 0 30px 0;
+	padding: 20px 0 20px;
+}
+	.quienes--somos--descripcion{
+		border-left: 1px solod #ccc;
+	}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+.home__servicios{
+	border-top: 5px solid #19541e;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	.home__servicios_titulo{
+		color:white;
+	}
+	.home__servicios--img{
+		max-width: 100%;
+		height: auto;
+	}
+	.home__servicios--des {
+		border-radius: 5px;
+		padding: 15px;
+		background: white;
+		position: relative;
+		top:-20px;
+		margin-bottom: -10px
+	}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer{
+	background: #012912;
+	border-radius: 0 0 5px 5px;
+	color: white;
+	font-size: .75rem;
+	letter-spacing: 0.075rem;
+	padding-top: 20px;
+}
+	.footer a{
+		color: white;
+	}
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen  and (min-width: 600px){
+	.container {
+		padding: 20px 0 20px 0;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.site-branding {
+		text-align: left;
+
+	}
+	.cromo-duro--recaudro{
+		padding-bottom: 20px;
+		margin: 0;
+		width: 58.33333333%;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
