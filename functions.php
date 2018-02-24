@@ -118,6 +118,7 @@ add_action( 'widgets_init', 'ocaltda_widgets_init' );
  */
 function ocaltda_scripts() {
 	wp_enqueue_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), true);
+	wp_enqueue_script( 'funciones', get_template_directory_uri() . '/js/funciones.js', array('jquery'), true);
 	wp_enqueue_style( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 	wp_enqueue_style( 'ocaltda-style', get_stylesheet_uri() );
 

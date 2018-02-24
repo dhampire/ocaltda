@@ -45,7 +45,7 @@ get_header(); ?>
 	                            </div>
                             <div class="item">
 	                                <picture>
-	                            		<source srcset="<?php echo get_template_directory_uri(); ?>/img/cromo-duro-industrial-min.png" media="(max-width: 600px)">
+	                            		<source srcset="<?php echo get_template_directory_uri(); ?>/img/vastago-hidraulico-min.png" media="(max-width: 600px)">
 	                                	<img class="slide__picture--img" src="<?php echo get_template_directory_uri(); ?>/img/vastago-hidraulico.png' ?>" alt="">
 	                            	</picture>
 	                                <div class="carousel-caption slide__cuadro">
@@ -58,7 +58,7 @@ get_header(); ?>
 	                            </div>
 		                            <div class="item">
 	                                <picture>
-	                            		<source srcset="<?php echo get_template_directory_uri(); ?>/img/cromo-duro-industrial-min.png" media="(max-width: 600px)">
+	                            		<source srcset="<?php echo get_template_directory_uri(); ?>/img/banner-min.png" media="(max-width: 600px)">
 	                                	<img class="slide__picture--img" src="<?php echo get_template_directory_uri(); ?>/img/banner.png' ?>" alt="">
 	                            	</picture>
 	                                <div class="carousel-caption slide__cuadro">
